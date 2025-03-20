@@ -1,0 +1,47 @@
+# Build artifacts
+bin/
+obj/
+*.exe
+*.dll
+*.pdb
+*.log
+
+# User-specific files
+.vscode/
+.idea/
+*.suo
+*.user
+*.userosscache
+*.sln.docstates
+
+# Config files
+appsettings.Development.json
+appsettings.Local.json
+
+# Environment
+.env
+.env.local
+
+# NuGet
+*.nupkg
+*.snupkg
+.nuget/
+
+# Debugger
+*.pidb
+*.mdb
+
+# Rider / JetBrains
+.idea/
+*.iml
+
+# Coverage / Test results
+TestResults/
+coverage/
+
+# Logs
+logs/
+*.log
+npm-debug.log
+yarn-debug.log
+yarn-error.log
