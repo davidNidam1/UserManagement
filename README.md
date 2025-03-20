@@ -5,14 +5,22 @@ This repository contains the backend for a user management system, built using *
 The project was developed starting with the backend, and API requests were tested directly before building the frontend.
 
 ## Technologies Used  
-- **C# with ASP.NET Core 8**
-- **MongoDB** for database management
-- **JWT Authentication**
-- **xUnit** for unit and integration testing
+- **C# with ASP.NET Core 8**  
+- **MongoDB** for database management  
+- **JWT Authentication**  
+- **xUnit** for unit and integration testing  
 
 ## Project Structure  
-UserManagement/ │── Controllers/ # API Controllers │── Models/ # Data Models │── Services/ # Business Logic │── Properties/ # Configuration │── appsettings.json # Application settings │── Program.cs # Main entry point │── UserManagement.csproj # Project file
-
+```
+UserManagement/
+│── Controllers/        # API Controllers
+│── Models/             # Data Models
+│── Services/           # Business Logic
+│── Properties/         # Configuration
+│── appsettings.json    # Application settings
+│── Program.cs          # Main entry point
+│── UserManagement.csproj # Project file
+```
 
 ## Installation & Setup  
 
@@ -20,42 +28,60 @@ UserManagement/ │── Controllers/ # API Controllers │── Models/ # Dat
 ```sh
 git clone https://github.com/davidNidam1/UserManagement.git
 cd UserManagement
+```
 
-2. Install dependencies
-Ensure you have .NET SDK 8 installed. If not, download it from:
-dotnet.microsoft.com
+### 2. Install dependencies  
+Ensure you have **.NET SDK 8** installed. If not, download it from:  
+[dotnet.microsoft.com](https://dotnet.microsoft.com/en-us/download)
 
 Then, restore dependencies:
+```sh
 dotnet restore
+```
 
-3. Configure MongoDB
-By default, the application connects to a local MongoDB instance at: mongodb://localhost:27017
-If needed, modify the connection string in appsettings.json:
+### 3. Configure MongoDB  
+By default, the application connects to a **local MongoDB instance** at:
+```plaintext
+mongodb://localhost:27017
+```
+If needed, modify the **connection string** in `appsettings.json`:
+```json
 "ConnectionStrings": {
   "MongoDb": "mongodb://your-mongodb-url"
 }
-
+```
 Make sure MongoDB is running before launching the server.
 
-4. Run the server
+### 4. Run the server  
+```sh
 dotnet run
-
-The server will be available at:
+```
+The server will be available at:  
+```
 http://localhost:5089
+```
 
-Related Repositories
-Frontend Repository: User Management Client
-Testing Repository: User Management Tests
+## Running Tests  
+To run all unit and integration tests:  
+```sh
+dotnet test
+```
 
-Future Improvements
-If more time were available, the following enhancements could be implemented:
+## Related Repositories  
+- **Frontend Repository:** [User Management Client](https://github.com/davidNidam1/user-management-client)  
+- **Testing Repository:** [User Management Tests](https://github.com/davidNidam1/UserServerTests)  
 
-Improved UI design for a more polished frontend
-Better modular separation for improved maintainability
-Stronger security measures, including rate limiting and OAuth
-Dockerization for easy deployment
-Cloud deployment on AWS, Azure, or DigitalOcean
+## Future Improvements  
+If more time were available, the following enhancements could be implemented:  
+- **Improved UI design** for a more polished frontend  
+- **Better modular separation** for improved maintainability  
+- **Stronger security measures**, including rate limiting and OAuth  
+- **Dockerization** for easy deployment  
+- **Cloud deployment** on AWS, Azure, or DigitalOcean  
 
+## Summary  
+This repository provides a well-structured **backend API** with **secure authentication** and **full test coverage**.  
+The API was tested during development before the frontend was built.
 
-
+If you have any questions, feel free to contact me.
 
